@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="results-container">
+
+    <h1>✨ Outfits Curated Just For You</h1>
+
+    <!-- ===== STYLE VIBES ===== -->
+    <div class="style-vibes">
+        <h2 class="vibe-title">Your Style Vibes</h2>
+
+        <div class="emoji-container">
+            <span class="emoji e1">✨</span>
+            <span class="emoji e2">👗</span>
+            <span class="emoji e3">💎</span>
+            <span class="emoji e4">🕶️</span>
+            <span class="emoji e5">🔥</span>
+            <span class="emoji e6">🌟</span>
+        </div>
+    </div>
+
+    <!-- ===== UPLOAD SECTION ===== -->
+    <div class="upload-section">
+        <h2>Upload Your Photo</h2>
+        <p>Upload your picture for personalized outfit preview</p>
+
+        <div class="upload-box" onclick="document.getElementById('photoInput').click()">
+            📸 Click to Upload
+            <input type="file" id="photoInput" accept="image/*" hidden onchange="previewImage(event)">
+        </div>
+
+        <div class="preview-container">
+            <img id="previewImage">
+        </div>
+    </div>
+
+    <!-- ===== COLOR SECTION ===== -->
+    <div class="color-box">
+        <h3>Colors That Suit You</h3>
+        <div class="tags">
+            <a href="https://www.google.com/search?q=orange+fashion" target="_blank"><span>Orange</span></a>
+            <a href="https://www.google.com/search?q=gold+fashion" target="_blank"><span>Gold</span></a>
+            <a href="https://www.google.com/search?q=electric+blue+fashion" target="_blank"><span>Electric Blue</span></a>
+            <a href="https://www.google.com/search?q=hot+pink+fashion" target="_blank"><span>Hot Pink</span></a>
+        </div>
+    </div>
+
+    <!-- ===== SHOP SECTION ===== -->
+    <div class="shop-section">
+        <h3>Shop by Platform</h3>
+        <div class="tags">
+            <a href="https://www.myntra.com" target="_blank"><span>Myntra</span></a>
+            <a href="https://www.ajio.com" target="_blank"><span>AJIO</span></a>
+            <a href="https://www.amazon.in" target="_blank"><span>Amazon</span></a>
+            <a href="https://www.flipkart.com" target="_blank"><span>Flipkart</span></a>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="goBack()">← Back</button>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

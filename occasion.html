@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Occasion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-container">
+    <h2 class="page-title">Select Your Occasion</h2>
+
+    <div class="occasion-grid">
+
+        <div class="occasion-card" 
+             style="background-image:url('assets/birthday.jpg')"
+             onclick="saveAndNext('occasion','Birthday','style.html')">
+            <div class="overlay"></div>
+            <h3>Birthday Party</h3>
+        </div>
+
+        <div class="occasion-card" 
+             style="background-image:url('assets/wedding.png')"
+             onclick="saveAndNext('occasion','Wedding','style.html')">
+            <div class="overlay"></div>
+            <h3>Wedding</h3>
+        </div>
+
+        <div class="occasion-card" 
+             style="background-image:url('assets/office.webp')"
+             onclick="saveAndNext('occasion','Office','style.html')">
+            <div class="overlay"></div>
+            <h3>Office</h3>
+        </div>
+
+        <div class="occasion-card" 
+             style="background-image:url('assets/beach.webp')"
+             onclick="saveAndNext('occasion','Beach','style.html')">
+            <div class="overlay"></div>
+            <h3>Beach</h3>
+        </div>
+
+    </div>
+
+    <button class="back-btn" onclick="goBack()">← Back</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

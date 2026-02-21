@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- STEP 1 -->
+    <div class="step active" id="step1">
+        <h2>Who are you styling?</h2>
+        <div class="options">
+            <button class="option-btn" onclick="selectOption(this,'gender','Male')">Male</button>
+            <button class="option-btn" onclick="selectOption(this,'gender','Female')">Female</button>
+            <button class="option-btn" onclick="selectOption(this,'gender','Others')">Others</button>
+        </div>
+        <button class="next-btn" onclick="nextStep()" disabled id="next1">Next →</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step" id="step2">
+        <h2>What's the Occasion?</h2>
+        <div class="options">
+            <button class="option-btn" onclick="selectOption(this,'occasion','Birthday')">Birthday</button>
+            <button class="option-btn" onclick="selectOption(this,'occasion','Wedding')">Wedding</button>
+            <button class="option-btn" onclick="selectOption(this,'occasion','Office')">Office</button>
+            <button class="option-btn" onclick="selectOption(this,'occasion','Beach')">Beach</button>
+        </div>
+        <button class="next-btn" onclick="nextStep()" disabled id="next2">Next →</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step" id="step3">
+        <h2>Budget Range</h2>
+        <div class="options">
+            <button class="option-btn" onclick="selectOption(this,'budget','Under 2000')">Under ₹2000</button>
+            <button class="option-btn" onclick="selectOption(this,'budget','2000-5000')">₹2000-₹5000</button>
+            <button class="option-btn" onclick="selectOption(this,'budget','Luxury')">Luxury</button>
+        </div>
+        <button class="next-btn" onclick="goResults()" disabled id="next3">See Results ✨</button>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
